@@ -14,6 +14,7 @@ Wir betreiben Quake III Arena Server mit dem OSP-Mod: **Duel**, **Team Deathmatc
 | [dwc-hp](https://github.com/doomwarriors-clan/dwc-hp) | Die Clan-Homepage. Sie zeigt Demos und Spielstatistiken der Server. | – |
 | q3-servers *(privat)* | Das Deployment der vier Server mit Docker Compose. | – |
 | [q3bot](https://github.com/doomwarriors-clan/qbot) | Discord bot mit live stats zu matches auf den Doomwarriors Servers + overall stats pulling von der doomwarriors.de homepage | Stark abgewandelt von [QBot](https://github.com/andreagiavatto/QBot) |
+| [dwc-bots](https://github.com/doomwarriors-clan/dwc-bots) | adjusted original Quake3 bots with new weights and new names - delivered as zzz_dwc_bots.pk3 | - |
 
 ## Wie die Teile zusammenhängen
 

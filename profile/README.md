@@ -10,7 +10,7 @@ Wir betreiben Quake III Arena Server mit dem OSP-Mod: **Duel**, **Team Deathmatc
 | Repo | Inhalt | Upstream |
 |---|---|---|
 | [Quake3e](https://github.com/doomwarriors-clan/Quake3e) | Die Server-Engine. Unser Fork von Quake3e mit serverseitigen Multiview-Demos, `sv_onRestart` und lernenden Bots. | [ec-/Quake3e](https://github.com/ec-/Quake3e) |
-| osp *(in Vorbereitung)* | **OSP 1.03a-dwc**: OSP 1.03a mit den Security-Fixes von xq3osp und unseren eigenen Änderungen. | [JKornev/xq3osp](https://github.com/JKornev/xq3osp) |
+| [osp](https://github.com/doomwarriors-clan/osp) | **OSP 1.03a-dwc**: OSP 1.03a mit den Security-Fixes von xq3osp und unseren eigenen Änderungen. | [JKornev/xq3osp](https://github.com/JKornev/xq3osp) |
 | [dwc-hp](https://github.com/doomwarriors-clan/dwc-hp) | Die Clan-Homepage. Sie zeigt Demos und Spielstatistiken der Server. | – |
 | q3-servers *(privat)* | Das Deployment der vier Server mit Docker Compose. | – |
 | [q3bot](https://github.com/doomwarriors-clan/qbot) | Discord bot mit live stats zu matches auf den Doomwarriors Servers + overall stats pulling von der doomwarriors.de homepage | Stark abgewandelt von [QBot](https://github.com/andreagiavatto/QBot) |

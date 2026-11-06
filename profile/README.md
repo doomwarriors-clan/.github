@@ -1,47 +1,48 @@
 # Doomwarriors Clan
 
-Wir betreiben Quake III Arena Server mit dem OSP-Mod: **Duel**, **Team Deathmatch**,
-**Capture The Flag** und **Instagib**. Hier liegt der Code, mit dem sie laufen.
+We run Quake III Arena servers with the OSP mod: **Duel**, **Team Deathmatch**,
+**Capture The Flag** and **Instagib**. This is the code they run on.
 
 🌐 [doomwarriors.de](https://www.doomwarriors.de)
 
 ## Repositories
 
-| Repo | Inhalt | Upstream |
+| Repo | What | Upstream |
 |---|---|---|
-| [Quake3e](https://github.com/doomwarriors-clan/Quake3e) | Die Server-Engine. Unser Fork von Quake3e mit serverseitigen Multiview-Demos, `sv_onRestart` und lernenden Bots. | [ec-/Quake3e](https://github.com/ec-/Quake3e) |
-| [osp](https://github.com/doomwarriors-clan/osp) | **OSP 1.03a-dwc**: OSP 1.03a mit den Security-Fixes von xq3osp und unseren eigenen Änderungen. | [JKornev/xq3osp](https://github.com/JKornev/xq3osp) |
-| [dwc-hp](https://github.com/doomwarriors-clan/dwc-hp) | Die Clan-Homepage. Sie zeigt Demos und Spielstatistiken der Server. | – |
-| q3-servers *(privat)* | Das Deployment der vier Server mit Docker Compose. | – |
-| [q3bot](https://github.com/doomwarriors-clan/qbot) | Discord bot mit live stats zu matches auf den Doomwarriors Servers + overall stats pulling von der doomwarriors.de homepage | Stark abgewandelt von [QBot](https://github.com/andreagiavatto/QBot) |
-| [dwc-bots](https://github.com/doomwarriors-clan/dwc-bots) | adjusted original Quake3 bots with new weights and new names - delivered as zzz_dwc_bots.pk3 | - |
+| [Quake3e](https://github.com/doomwarriors-clan/Quake3e) | The server engine. Our fork of Quake3e with server-side multiview demos, `sv_onRestart` and learning bots. | [ec-/Quake3e](https://github.com/ec-/Quake3e) |
+| [osp](https://github.com/doomwarriors-clan/osp) | **OSP 1.03a-dwc**: OSP 1.03a with the security fixes of xq3osp and our own changes. | [JKornev/xq3osp](https://github.com/JKornev/xq3osp) |
+| [dwc-hp](https://github.com/doomwarriors-clan/dwc-hp) | The clan homepage. It shows the servers' demos and game statistics. | – |
+| q3-servers *(private)* | The deployment of the four servers with Docker Compose. | – |
+| [qbot](https://github.com/doomwarriors-clan/qbot) | Discord bot with live stats of matches on the doomwarriors servers and overall stats from the doomwarriors.de homepage. | Heavily modified from [QBot](https://github.com/andreagiavatto/QBot) |
+| [dwc-bots](https://github.com/doomwarriors-clan/dwc-bots) | The original Quake 3 bots with new weights and new names, delivered as `zzz_dwc_bots.pk3`. | – |
 
-## Wie die Teile zusammenhängen
+## How the parts fit together
 
-Engine und OSP veröffentlichen versionierte Releases. Die Server verwenden fest
-eingetragene Versionen davon und werden erst auf einer Testinstanz geprüft.
-Alle vier Server laufen mit derselben Engine und demselben OSP. Welche Funktionen,
-etwa die Bots, ein Server nutzt, legt er selbst in seiner Config fest.
+The engine and OSP publish versioned releases. The servers use pinned versions
+of them, which are tried on a test instance first. All four servers run the
+same engine and the same OSP. Which features, such as the bots, a server uses
+is set in its own config.
 
-Engine-Branches im Fork:
+Engine branches in the fork:
 
-- `main` spiegelt ec-/Quake3e ohne eigene Änderungen.
-- `multiview` und `bots` sind eigenständige Features auf Basis von `main`. Sie sind so gebaut,
-  dass wir sie auch als PR an den Upstream geben können.
-- `dwc` fasst alles zusammen. Daraus entstehen die Releases (`dwc-YYYY.MM.DD`).
+- `main` mirrors ec-/Quake3e without changes of our own.
+- `multiview` is a standalone feature based on `main`, built so that we can
+  also offer it upstream as a pull request.
+- `dwc` combines everything (multiview, bot memory, our server tweaks). The
+  releases (`dwc-YYYY.MM.DD`) are built from it.
 
-## Mitspielen
+## Play
 
-Du brauchst einen beliebigen Quake-III-Client, wir empfehlen
-[Quake3e](https://github.com/ec-/Quake3e). Wähle in der Konsole den Mod mit
-`/fs_game osp` und verbinde dich mit `/connect <server>:<port>`.
+Any Quake III client works; we recommend
+[Quake3e](https://github.com/ec-/Quake3e). Select the mod in the console with
+`/fs_game osp` and connect with `/connect <server>:<port>`.
 
-## Mitmachen
+## Contribute
 
-Bugs und Ideen kannst du als Issue im passenden Repo melden. Änderungen an `dwc`
-(Engine) und `main` (OSP) laufen nur über Pull Requests mit Review.
+Report bugs and ideas as an issue in the matching repo. Changes to the main
+branches only go in through pull requests.
 
-## Lizenzen
+## Licenses
 
-Quake3e steht unter der GPLv2. Die Spieldaten von Quake III Arena (`pak0.pk3` usw.)
-sind urheberrechtlich geschützt und nicht in diesen Repos enthalten.
+Quake3e is licensed under GPLv2. The Quake III Arena game data (`pak0.pk3`
+etc.) is copyrighted and not included in these repos.

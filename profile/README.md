@@ -15,6 +15,7 @@ We run Quake III Arena servers with the OSP mod: **Duel**, **Team Deathmatch**,
 | q3-servers *(private)* | The deployment of the four servers with Docker Compose. | – |
 | [qbot](https://github.com/doomwarriors-clan/qbot) | Discord bot with live stats of matches on the doomwarriors servers and overall stats from the doomwarriors.de homepage. | Heavily modified from [QBot](https://github.com/andreagiavatto/QBot) |
 | [dwc-bots](https://github.com/doomwarriors-clan/dwc-bots) | The original Quake 3 bots with new weights and new names, delivered as `zzz_dwc_bots.pk3`. | – |
+| [knecht-q3-bot](https://github.com/doomwarriors-clan/knecht-q3-bot) | A Neural Network trainable bot - right now in PoC phase | [bobbybones-quake](https://github.com/dclark202/bobbybones-quake) |
 
 ## How the parts fit together
 

@@ -13,6 +13,7 @@ We run Quake III Arena servers with the OSP mod: **Duel**, **Team Deathmatch**,
 | [osp](https://github.com/doomwarriors-clan/osp) | **OSP 1.03a-dwc**: OSP 1.03a with the security fixes of xq3osp and our own changes. | [JKornev/xq3osp](https://github.com/JKornev/xq3osp) |
 | [dwc-hp](https://github.com/doomwarriors-clan/dwc-hp) | The clan homepage. It shows the servers' demos and game statistics. | – |
 | q3-servers *(private)* | The deployment of the four servers with Docker Compose. | – |
+| etqw-server *(private)* | The deployment of the Enemy Territory: Quake Wars server with Docker Compose | - |
 | [qbot](https://github.com/doomwarriors-clan/qbot) | Discord bot with live stats of matches on the doomwarriors servers and overall stats from the doomwarriors.de homepage. | Heavily modified from [QBot](https://github.com/andreagiavatto/QBot) |
 | [dwc-bots](https://github.com/doomwarriors-clan/dwc-bots) | The original Quake 3 bots with new weights and new names, delivered as `zzz_dwc_bots.pk3`. | – |
 | [knecht-q3-bot](https://github.com/doomwarriors-clan/knecht-q3-bot) | A Neural Network trainable bot - right now in PoC phase | [bobbybones-quake](https://github.com/dclark202/bobbybones-quake) |
